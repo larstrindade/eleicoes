@@ -9,6 +9,8 @@ main {
     background-color: rgb(255, 255, 255);
     margin:auto;
     z-index: 2;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 p {

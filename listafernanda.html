@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022 - Maranguape</title>
+    
+    <link rel="stylesheet" type="text/css" href="stylecss.css" media="screen" />
+    <link 
+        rel="stylesheet" 
+        href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+    />
+    <style>
+      
+        table {
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            display: block;
+            margin:auto;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 450px;
+        }
+
+      td {
+        border:1px solid black;
+        width:200px;
+        border-collapse: collapse;
+      }
+
+      table tr:nth-child(even) /* CSS3 */ {
+            background: #b5f8f8;
+}
+
+        table tr:hover {
+            background: #72acfd;
+}
+
+        tfoot{
+            background-color: #72acfd;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1 class="head">Eleições Maranguape 2022</h1>
+    <nav id="menu-dropdown">
+        <ul>
+          <li class="active"><a href="index.html">Início</a></li>
+          <li><a href="#">Deputado Estadual</a>
+            <ul>
+            <li><a href="listajoao.html">Votos João Jaime</a></li>
+            <li><a href="listalucilvio.html">Voto Lucilvio</a></li>
+            <li><a href="estcol.html">Gráfico Colunas</a></li>
+            <li><a href="pieest.html">Gráfico Pizza</a></li>
+          </li>
+            </ul>
+        </ul>
+        
+          <ul>
+          <li><a href="#">Deputado Federal</a>
+            <ul>
+            <li><a href="listamatheus.html">Votos Matheus Noronha</a></li>
+            <li><a href="#">Votos Fernanda Pessoa</a></li>
+            <li><a href="fedecolu.html">Gráfico Colunas</a></li>
+            <li><a href="piefe.html">Gráfico Pizza</a></li>
+            </li>
+            </ul>
+          </li>
+         
+        </nav>
+<br>
+    <h1 class="titulo">Lista por localidade: Votação - Deputada Federal Fernanda Pessoa</h1>
+    
+    <table>
+       
+        <thead>
+            <tr>
+                <th>Localidade</th>
+                <th>Total de votos</th>
+                <th>Porcentagem da localidade</th>     
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Amanari</td>
+                <td>521</td>
+                <td>13.68%</td>
+            </tr>
+            <tr>
+                <td>Boa Vista Valentins</td>
+                <td>30</td>
+                <td>7.35%</td>
+            </tr>
+
+            <tr>
+                <td>Cachoeira</td>
+                <td>129</td>
+                <td>14.43%</td>
+            </tr>
+
+            <tr>
+                <td>Cacimbão</td>
+                <td>15</td>
+                <td>5.12%</td>
+            </tr>
+            
+            <tr>
+                <td>Cajueiro</td>
+                <td>116</td>
+                <td>22.39%</td>
+            </tr>
+
+            <tr>
+                <td>Centro</td>
+                <td>364</td>
+                <td>7.07%</td>
+            </tr>
+
+            <tr>
+                <td>Coité</td>
+                <td>85</td>
+                <td>5.24%</td>
+            </tr>
+
+            <tr>
+                <td>Columinjuba</td>
+                <td>8</td>
+                <td>3.70%</td>
+            </tr>
+
+            <tr>
+                <td>Cônego Heitor</td>
+                <td>180</td>
+                <td>11.28%</td>
+            </tr>
+            <tr>
+                <td>Forquilha</td>
+                <td>37</td>
+                <td>13.36%</td>
+            </tr>
+
+            <tr>
+                <td>Guabiraba</td>
+                <td>235</td>
+                <td>6.52%</td>
+            </tr>
+
+            <tr>
+                <td>Itapebussu</td>
+                <td>335</td>
+                <td>12.33%</td>
+            </tr>
+
+            <tr>
+                <td>Jardim</td>
+                <td>11</td>
+                <td>3.94%</td>
+            </tr>
+
+            <tr>
+                <td>Jubaia</td>
+                <td>235</td>
+                <td>16.32%</td>
+            </tr>
+
+            <tr>
+                <td>Ladeira</td>
+                <td>82</td>
+                <td>5.25%</td>
+            </tr>
+
+            <tr>
+                <td>Lages</td>
+                <td>193</td>
+                <td>12.69%</td>
+            </tr>
+
+            <tr>
+                <td>Lagoa do Juvenal</td>
+                <td>154</td>
+                <td>13.03%</td>
+            </tr>
+
+            <tr>
+                <td>Manoel Guedes</td>
+                <td>69</td>
+                <td>8.64%</td>
+            </tr>
+
+            <tr>
+                <td>Novo Maranguape I</td>
+                <td>366</td>
+                <td>7.91%</td>
+            </tr>
+            <tr>
+                <td>Novo Parque Iracema</td>
+                <td>112</td>
+                <td>5.65%</td>
+            </tr>
+            <tr>
+                <td>Outra Banda</td>
+                <td>494</td>
+                <td>7.53%</td>
+            </tr>
+            <tr>
+                <td>Papara</td>
+                <td>332</td>
+                <td>25.34%</td>
+            </tr>
+            <tr>
+                <td>Parque Iracema</td>
+                <td>277</td>
+                <td>6.94%</td>
+            </tr>
+            <tr>
+                <td>Parque Santa Fé</td>
+                <td>177</td>
+                <td>8.64%</td>
+            </tr>
+            <tr>
+                <td>Parque São João</td>
+                <td>26</td>
+                <td>3.11%</td>
+            </tr>
+            <tr>
+                <td>Penedo</td>
+                <td>76</td>
+                <td>5.74%</td>
+            </tr>
+            <tr>
+                <td>Pirapora</td>
+                <td>16</td>
+                <td>11.19%</td>
+            </tr>
+            <tr>
+                <td>Rato de Cima</td>
+                <td>155</td>
+                <td>24.41%</td>
+            </tr>
+            
+            <tr>
+                <td>Santos Dumont</td>
+                <td>60</td>
+                <td>6.94%</td>
+            </tr>
+            <tr>
+                <td>São João do Amanari</td>
+                <td>347</td>
+                <td>25.37%</td>
+            </tr>
+            <tr>
+                <td>Sapupara</td>
+                <td>164</td>
+                <td>8.38%</td>
+            </tr>
+            <tr>
+                <td>Serra do Lagedo</td>
+                <td>73</td>
+                <td>9.96%</td>
+            </tr>
+            <tr>
+                <td>Tabatinga</td>
+                <td>198</td>
+                <td>9.74%</td>
+            </tr>
+            <tr>
+                <td>Tangueira</td>
+                <td>49</td>
+                <td>5.44%</td>
+            </tr>
+            <tr>
+                <td>Tanques</td>
+                <td>85</td>
+                <td>8.22%</td>
+            </tr>
+            <tr>
+                <td>Trapiá</td>
+                <td>45</td>
+                <td>15.15%</td>
+            </tr>
+            <tr>
+                <td>Umarizeiras</td>
+                <td>166</td>
+                <td>17.08%</td>
+            </tr>
+            <tr>
+                <td>Urucará</td>
+                <td>64</td>
+                <td>6.66%</td>
+            </tr>
+            <tr>
+                <td>Viçosa</td>
+                <td>9</td>
+                <td>6.43%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Maranguape</th>
+                <td>6090</td>
+                <td>9.73%</td>
+            </tr>
+        </tfoot>
+
+    </table>
+  
+
+<p class="assinatura">Desenvolvido por Lauriston Trindade - <a href="https://br.linkedin.com/in/lauriston-trindade-3a40b4ba">Linkedin</p> 
+</main>
+</body>
+</html>

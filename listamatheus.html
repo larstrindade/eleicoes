@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022 - Maranguape</title>
+    
+    <link rel="stylesheet" type="text/css" href="stylecss.css" media="screen" />
+    <link 
+        rel="stylesheet" 
+        href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+    />
+    <style>
+      
+        table {
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin:auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+      td {
+        border:1px solid black;
+        width:200px;
+        border-collapse: collapse;
+      }
+
+      table tr:nth-child(even) /* CSS3 */ {
+            background: #b5f8f8;
+}
+
+        table tr:hover {
+            background: #72acfd;
+}
+
+        tfoot{
+            background-color: #72acfd;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1 class="head">Eleições Maranguape 2022</h1>
+    <nav id="menu-dropdown">
+        <ul>
+          <li class="active"><a href="index.html">Início</a></li>
+          <li><a href="#">Deputado Estadual</a>
+            <ul>
+            <li><a href="listajoao.html">Votos João Jaime</a></li>
+            <li><a href="listalucilvio.html">Voto Lucilvio</a></li>
+            <li><a href="estcol.html">Gráfico Colunas</a></li>
+            <li><a href="pieest.html">Gráfico Pizza</a></li>
+          </li>
+            </ul>
+        </ul>
+        
+          <ul>
+          <li><a href="#">Deputado Federal</a>
+            <ul>
+            <li><a href="#">Votos Matheus Noronha</a></li>
+            <li><a href="listafernanda.html">Votos Fernanda Pessoa</a></li>
+            <li><a href="fedecolu.html">Gráfico Colunas</a></li>
+            <li><a href="piefe.html">Gráfico Pizza</a></li>
+            </li>
+            </ul>
+          </li>
+         
+        </nav>
+<br>
+    <h1 class="titulo">Lista por localidade: Votação - Deputado Federal Matheus Noronha</h1>
+    
+    <table>
+       
+        <thead>
+            <tr>
+                <th>Localidade</th>
+                <th>Total de votos</th>
+                <th>Porcentagem da localidade</th>     
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Amanari</td>
+                <td>1166</td>
+                <td>30.61%</td>
+            </tr>
+            <tr>
+                <td>Boa Vista Valentins</td>
+                <td>113</td>
+                <td>27.70%</td>
+            </tr>
+
+            <tr>
+                <td>Cachoeira</td>
+                <td>118</td>
+                <td>13.20%</td>
+            </tr>
+
+            <tr>
+                <td>Cacimbão</td>
+                <td>47</td>
+                <td>16.04%</td>
+            </tr>
+            
+            <tr>
+                <td>Cajueiro</td>
+                <td>174</td>
+                <td>33.59%</td>
+            </tr>
+
+            <tr>
+                <td>Centro</td>
+                <td>725</td>
+                <td>14.09%</td>
+            </tr>
+
+            <tr>
+                <td>Coité</td>
+                <td>125</td>
+                <td>7.71%</td>
+            </tr>
+
+            <tr>
+                <td>Columinjuba</td>
+                <td>32</td>
+                <td>14.81%</td>
+            </tr>
+
+            <tr>
+                <td>Cônego Heitor</td>
+                <td>200</td>
+                <td>12.53%</td>
+            </tr>
+            <tr>
+                <td>Forquilha</td>
+                <td>107</td>
+                <td>38.63%</td>
+            </tr>
+
+            <tr>
+                <td>Guabiraba</td>
+                <td>711</td>
+                <td>19.73%</td>
+            </tr>
+
+            <tr>
+                <td>Itapebussu</td>
+                <td>983</td>
+                <td>36.17%</td>
+            </tr>
+
+            <tr>
+                <td>Jardim</td>
+                <td>55</td>
+                <td>19.71%</td>
+            </tr>
+
+            <tr>
+                <td>Jubaia</td>
+                <td>432</td>
+                <td>30.00%</td>
+            </tr>
+
+            <tr>
+                <td>Ladeira</td>
+                <td>284</td>
+                <td>18.18%</td>
+            </tr>
+
+            <tr>
+                <td>Lages</td>
+                <td>434</td>
+                <td>28.53%</td>
+            </tr>
+
+            <tr>
+                <td>Lagoa do Juvenal</td>
+                <td>301</td>
+                <td>25.47%</td>
+            </tr>
+
+            <tr>
+                <td>Manoel Guedes</td>
+                <td>225</td>
+                <td>28.16%</td>
+            </tr>
+
+            <tr>
+                <td>Novo Maranguape I</td>
+                <td>836</td>
+                <td>18.06%</td>
+            </tr>
+            <tr>
+                <td>Novo Parque Iracema</td>
+                <td>318</td>
+                <td>16.04%</td>
+            </tr>
+            <tr>
+                <td>Outra Banda</td>
+                <td>1049</td>
+                <td>16.00%</td>
+            </tr>
+            <tr>
+                <td>Papara</td>
+                <td>389</td>
+                <td>29.69%</td>
+            </tr>
+            <tr>
+                <td>Parque Iracema</td>
+                <td>605</td>
+                <td>15.23%</td>
+            </tr>
+            <tr>
+                <td>Parque Santa Fé</td>
+                <td>298</td>
+                <td>14.54%</td>
+            </tr>
+            <tr>
+                <td>Parque São João</td>
+                <td>106</td>
+                <td>12.66%</td>
+            </tr>
+            <tr>
+                <td>Penedo</td>
+                <td>203</td>
+                <td>15.34%</td>
+            </tr>
+            <tr>
+                <td>Pirapora</td>
+                <td>11</td>
+                <td>7.69%</td>
+            </tr>
+            <tr>
+                <td>Rato de Cima</td>
+                <td>96</td>
+                <td>15.12%</td>
+            </tr>
+            <tr>
+                <td>Santos Dumont</td>
+                <td>92</td>
+                <td>10.64%</td>
+            </tr>
+            <tr>
+                <td>São João do Amanari</td>
+                <td>328</td>
+                <td>23.98%</td>
+            </tr>
+          
+            <tr>
+                <td>Sapupara</td>
+                <td>570</td>
+                <td>29.11%</td>
+            </tr>
+            <tr>
+                <td>Serra do Lagedo</td>
+                <td>261</td>
+                <td>35.61%</td>
+            </tr>
+            <tr>
+                <td>Tabatinga</td>
+                <td>536</td>
+                <td>26.36%</td>
+            </tr>
+            <tr>
+                <td>Tangueira</td>
+                <td>97</td>
+                <td>10.78%</td>
+            </tr>
+            <tr>
+                <td>Tanques</td>
+                <td>336</td>
+                <td>32.50%</td>
+            </tr>
+            <tr>
+                <td>Trapiá</td>
+                <td>35</td>
+                <td>11.78%</td>
+            </tr>
+            <tr>
+                <td>Umarizeiras</td>
+                <td>211</td>
+                <td>21.71%</td>
+            </tr>
+            <tr>
+                <td>Urucará</td>
+                <td>319</td>
+                <td>33.19%</td>
+            </tr>
+            <tr>
+                <td>Viçosa</td>
+                <td>17</td>
+                <td>12.14%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Maranguape</th>
+                <td>12945</td>
+                <td>20.68%</td>
+            </tr>
+        </tfoot>
+
+    </table>
+  
+
+<p class="assinatura">Desenvolvido por Lauriston Trindade - <a href="https://br.linkedin.com/in/lauriston-trindade-3a40b4ba">Linkedin</p> 
+</main>
+</body>
+</html>
