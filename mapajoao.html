@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022 - Maranguape</title>
+    
+    <link rel="stylesheet" type="text/css" href="stylecss.css" media="screen" />
+    <link 
+        rel="stylesheet" 
+        href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+    />
+    <style>
+      
+    </style>
+</head>
+<body>
+<main>
+    <h1 class="head">Eleições Maranguape 2022</h1>
+<nav id="menu-dropdown">
+<ul>
+  <li class="active"><a href="index.html">Início</a></li>
+  <li><a href="#">Deputado Estadual</a>
+    <ul>
+      <li><a href="#">Mapa de Calor João Jaime</a></li>
+      <li><a href="mapalucilvio.html">Mapa de Calor Lucilvio Girão</a></li>
+      <li><a href="estcol.html">Gráfico Colunas</a></li>
+      <li><a href="pieest.html">Gráfico Pizza</a></li>
+  </li>
+    </ul>
+</ul>
+
+  <ul>
+  <li><a href="#">Deputado Federal</a>
+    <ul>
+      <li><a href="mapamatheus.html">Mapa de Calor Matheus Noronha</a></li>
+      <li><a href="mapafernanda.html">Mapa de Calor Fernanda Pessoa</a></li>
+      <li><a href="fedecolu.html">Gráfico Colunas</a></li>
+      <li><a href="piefe.html">Gráfico Pizza</a></li>
+    </li>
+    </ul>
+  </li>
+ 
+</nav>
+<br>
+    <h1 class="titulo">Mapa de calor: Votação - Deputado Estadual João Jaime</h1>
+    <div id="map"></div>
+
+    <script
+       src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
+    </script>
+    
+    <script
+       src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js">
+    </script>
+  <script src="joaojaime.js"></script>
+    <script>
+
+        var map = L.map('map').setView([-4.05,-38.95], 10);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+        }).addTo(map);
+        
+        var heat = L.heatLayer(votacao,{
+            radius: 60,
+            blur: 60, 
+            maxZoom: 17,
+        }).addTo(map);
+    
+    </script>
+
+<p class="assinatura">Desenvolvido por Lauriston Trindade - <a href="https://br.linkedin.com/in/lauriston-trindade-3a40b4ba">Linkedin</p> 
+</main>
+</body>
+</html>

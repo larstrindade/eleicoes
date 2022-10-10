@@ -1,0 +1,148 @@
+body {
+    padding: 0px;
+    margin:0px;
+  }
+  
+main {
+    max-width: 900px;
+    min-width: 380px;
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    z-index: 2;
+}
+
+p {
+    text-indent: 30px;
+}
+
+
+  .head {
+    margin-left: auto;
+    margin-right:auto;
+    color: #146a79;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.495);
+  }
+
+  .titulo {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right:auto;
+    color: #1c94aa;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.495);
+  }
+  
+  #menu-dropdown
+  {
+      margin-top:15px;
+      z-index: 1;
+      margin:auto;
+      padding-left:30px;
+  }
+  
+  #menu-dropdown ul
+  {
+      list-style:none;
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+      z-index: 1;
+  }
+  
+  #menu-dropdown ul a
+  {
+      display:block;
+      color: rgb(4, 60, 123);
+      text-decoration:none;
+      font-weight:700;
+      font-size:12px;
+      line-height:32px;
+      padding:0 15px;
+      font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+      z-index: 1;
+  }
+  
+  #menu-dropdown ul li
+  {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+      z-index: 1;
+  }
+  
+  #menu-dropdown ul li.active
+  {
+      background:rgb(93, 118, 140); /*Cor do Menu Ativo*/
+  }
+  
+  #menu-dropdown ul li:hover
+  {
+      background:#ccc;
+  }
+  
+  #menu-dropdown ul ul
+  {
+      display:none; /*Esconde todos os menus internos */
+      position:absolute;
+      top:100%;
+      left:0;
+      background:#fff;
+      padding:0
+  }
+  
+  #menu-dropdown ul ul li
+  {
+      float:none;
+      width:200px
+  }
+  
+  #menu-dropdown ul ul a
+  {
+      line-height:120%;
+      padding:10px 15px
+  }
+  
+  #menu-dropdown ul ul ul
+  {
+      top:0;
+      left:100%
+  }
+  
+  #menu-dropdown ul li:hover > ul
+  {
+      display:block; /*Exibe a proxima lista quando passar o mouse pelo item principal */
+  }
+
+
+  #map {
+    
+    margin:auto;
+    z-index: 0;
+    max-width: 800px;
+    min-width: 380px;
+    height: 500px;
+    margin-left:30px;
+    margin-right:30px;
+    
+
+}
+  
+  .assinatura{
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 12px;
+    padding-left:30px;
+    
+  }
+  
+  .assinatura a {
+    color: #0a5a68;
+    font-weight: 700;
+  }
